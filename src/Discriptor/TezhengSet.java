@@ -9,6 +9,7 @@ public class TezhengSet {
     public double[] audioLevels;
     public double[] motionVecotrLengths;
 
+
     public String saveToFile(){
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<audioLevels.length;i++){
@@ -103,26 +104,30 @@ public class TezhengSet {
         double[] ret = new double[input.vedio.size()];
         for(int i=1;i<input.vedio.size();i++){
             double vectorMo = getMotionVectorMo(input.vedio.get(i),input.vedio.get(i-1));
-            //System.out.println(vectorMo);
-            ret[i] = Math.round(vectorMo * 100) / 100.0;
+            if(vectorMo == -1){
+                ret[i] = -1;
+            }else{
+                ret[i] = Math.round(vectorMo * 100) / 100.0;
+            }
         }
         this.motionVecotrLengths = ret;
     }
 
-    public static double MotionMaxDiff = 100;
+    //public static double MotionMaxDiff = 100;
 
     public double getMotionVectorMo(byte[][][] nowf, byte[][][] pref){
 
         double vectorMoSum = 0;
-
+        int validVectorNum = 0;
         for(int i=0;i< MovieReader.height/16;i++){
             for(int j=0;j<MovieReader.width/16;j++){
                 int oi = 16*i;
                 int oj = 16*j;
-                int k = 31;
+                //int k = 31;
 
                 int[] vector = logSearch(nowf,pref,oi,oj);
                 if(vector != null){
+                    validVectorNum += 1;
                     vectorMoSum += Math.sqrt(vector[0]*vector[0] +  vector[1]*vector[1]);
                 }else{
                     System.out.println("??");
@@ -130,14 +135,19 @@ public class TezhengSet {
                 //if(smallestDiff>)
             }
         }
-        return vectorMoSum / (MovieReader.height/16 * MovieReader.width/16);
+        if(validVectorNum == 0){
+            return -1;
+        }
+        return vectorMoSum / validVectorNum;
     }
 
+    private static double maxDiff = 16*16*0.5;
     int[][] searchDir = new int[][]{{-1,0},{-1,-1},{-1,1},{1,0},{1,1},{1,-1},{0,1},{0,-1},{0,0}};
     public int[] logSearch(byte[][][] nowf, byte[][][] pref, int oiNow, int ojNow){
         int ojSearch = ojNow;
         int oiSearch = oiNow;
         int k = 16;
+        double globalMin = Double.MAX_VALUE;
         while(k>1){
             int newCenterI = -1;
             int newCenterJ = -1;
@@ -157,12 +167,17 @@ public class TezhengSet {
                     newCenterJ = newJ;
                 }
             }
+            globalMin = minDiff;
             k /= 2;
             ojSearch = newCenterJ;
             oiSearch = newCenterI;
         }
-        return new int[]{oiSearch-oiNow,ojSearch-ojNow};
-
+        if(globalMin > maxDiff){
+            return null;
+        }else{
+            System.out.println("you");
+            return new int[]{oiSearch-oiNow,ojSearch-ojNow};
+        }
     }
 
     public int[] hierarchicalSearch(){

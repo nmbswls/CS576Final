@@ -61,8 +61,8 @@ public class TezhengComparator {
             s = v1;
             l = v2;
         }else{
-            l = v2;
-            s = v1;
+            l = v1;
+            s = v2;
         }
         double[] ret = new double[l.length-s.length+1];
         for(int i=0;i<l.length-s.length+1;i++){
@@ -70,6 +70,21 @@ public class TezhengComparator {
             ret[i] = diff / 21.21;
         }
         return ret;
+    }
+
+    public static double movionDiffOnePos(double[] s, double[] l, int lidx){
+        double totalDiff = 0;
+        for(int j=0;j<s.length;j++){
+            if(s[j]==-1 || l[lidx+j] == -1){
+                totalDiff += 0;
+            }else{
+                double diff = s[j] - l[lidx+j] > 0 ? s[j]-l[lidx+j] : l[lidx+j] - s[j];
+                totalDiff += diff;
+            }
+        }
+        double avfDiff = totalDiff / s.length;
+        avfDiff = (int)Math.round(avfDiff * 100) / 100.0;
+        return avfDiff;
     }
 
     public static double[] getAudioDiffArray(double[] a1, double[] a2){
