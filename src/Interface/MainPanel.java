@@ -889,6 +889,8 @@ public class MainPanel extends JFrame{
         mPlot.setDomainCrosshairVisible(false);
         mPlot.setDomainGridlinesVisible(false);
 
+        mPlot.getRenderer().setSeriesStroke(0,new BasicStroke(4.0F));
+
         mPlot.setRangeGridlinePaint(Color.BLUE);//背景底部横虚线
         mPlot.setOutlinePaint(Color.RED);//边界线
 

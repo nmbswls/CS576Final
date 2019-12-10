@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0d8d7-0661-4824-b293-5ecb97d5f44a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/d0.txt" afterPath="$PROJECT_DIR$/d0.txt" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS576Final/Discriptor/TezhengComparator.class" afterPath="$PROJECT_DIR$/out/production/CS576Final/Discriptor/TezhengComparator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/CS576Final/Discriptor/TezhengSet.class" afterPath="$PROJECT_DIR$/out/production/CS576Final/Discriptor/TezhengSet.class" />
-      <change beforePath="$PROJECT_DIR$/src/Discriptor/TezhengComparator.java" afterPath="$PROJECT_DIR$/src/Discriptor/TezhengComparator.java" />
-      <change beforePath="$PROJECT_DIR$/src/Discriptor/TezhengSet.java" afterPath="$PROJECT_DIR$/src/Discriptor/TezhengSet.java" />
       <change beforePath="$PROJECT_DIR$/src/Interface/MainPanel.java" afterPath="$PROJECT_DIR$/src/Interface/MainPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Interface/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="916" column="38" lean-forward="false" selection-start-line="916" selection-start-column="38" selection-end-line="916" selection-end-column="38" />
+            <state relative-caret-position="195">
+              <caret line="891" column="63" lean-forward="false" selection-start-line="891" selection-start-column="63" selection-end-line="891" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#8500#8501#0" expanded="true" />
@@ -59,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TezhengSet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TezhengSet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Discriptor/TezhengSet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-906">
@@ -164,10 +158,10 @@
       <find>5f</find>
       <find>getAudioDiffArray</find>
       <find>logSearch</find>
-      <find>discriptors</find>
       <find>getMainColorDiffArray</find>
-      <find>handleColorOneFrame</find>
       <find>colorDiff</find>
+      <find>handleColorOneFrame</find>
+      <find>discriptors</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,9 +197,9 @@
         <option value="$PROJECT_DIR$/src/Discriptor/MovieStruct.java" />
         <option value="$PROJECT_DIR$/src/Sound/SoundReader.java" />
         <option value="$PROJECT_DIR$/src/main/OfflineHandler.java" />
-        <option value="$PROJECT_DIR$/src/Interface/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/Discriptor/TezhengComparator.java" />
         <option value="$PROJECT_DIR$/src/Discriptor/TezhengSet.java" />
+        <option value="$PROJECT_DIR$/src/Interface/MainPanel.java" />
       </list>
     </option>
   </component>
@@ -468,12 +462,12 @@
       <workItem from="1575431573495" duration="263000" />
       <workItem from="1575431855328" duration="8399000" />
       <workItem from="1575578807354" duration="27177000" />
-      <workItem from="1575961708779" duration="4413000" />
+      <workItem from="1575961708779" duration="4744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75785000" />
+    <option name="totallyTimeSpent" value="76116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="26" y="39" width="1680" height="936" extended-state="0" />
@@ -554,13 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/javax/swing/JLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="123" column="39" lean-forward="false" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/javax/swing/SwingConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -930,23 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interface/MainPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="916" column="38" lean-forward="false" selection-start-line="916" selection-start-column="38" selection-end-line="916" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8500#8501#0" expanded="true" />
-            <element signature="e#8544#8545#0" expanded="true" />
-            <element signature="class#14755:14972" expanded="false" />
-            <element signature="class#15015:15230" expanded="false" />
-            <element signature="class#15501:15716" expanded="false" />
-            <element signature="class#15760:15977" expanded="false" />
-            <element signature="class#16020:16235" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/d0.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1796">
@@ -973,6 +943,31 @@
             <element signature="e#2590#2591#0" expanded="true" />
             <element signature="e#2643#2644#0" expanded="true" />
             <element signature="e#3912#3930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/jfreechart-1.0.14.jar!/org/jfree/chart/renderer/category/CategoryItemRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="126" column="24" lean-forward="false" selection-start-line="126" selection-start-column="9" selection-end-line="126" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Interface/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="891" column="63" lean-forward="false" selection-start-line="891" selection-start-column="63" selection-end-line="891" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#8500#8501#0" expanded="true" />
+            <element signature="e#8544#8545#0" expanded="true" />
+            <element signature="class#14755:14972" expanded="false" />
+            <element signature="class#15015:15230" expanded="false" />
+            <element signature="class#15501:15716" expanded="false" />
+            <element signature="class#15760:15977" expanded="false" />
+            <element signature="class#16020:16235" expanded="false" />
           </folding>
         </state>
       </provider>
