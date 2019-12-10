@@ -914,8 +914,8 @@ public class MainPanel extends JFrame{
         DefaultKeyedValues2DDataset empty = new DefaultKeyedValues2DDataset();
         JFreeChart mChart = genChart(empty);
 
-        discriptors = new ChartPanel[3];
-        for(int i=0;i<3;i++){
+        discriptors = new ChartPanel[5];
+        for(int i=0;i<5;i++){
             discriptors[i] = new ChartPanel(mChart);
             discriptors[i].setPreferredSize(new Dimension(300,30));
         }
